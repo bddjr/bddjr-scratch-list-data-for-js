@@ -7,7 +7,7 @@ Use MIT License.
 
 [Scratch实现（点此进入）](https://codingclip.com/editor/4260)  
 
-[Python实现（点此进入）](htps://github.com/bddjr/bddjr-scratch-list-data-for-py)  
+[Python实现（点此进入）](https://github.com/bddjr/bddjr-scratch-list-data-for-py)  
 
 ***
 
