@@ -22,3 +22,10 @@ Use MIT License.
 ```
 
 以此类推。  
+
+***
+## 运行
+请预先安装了nodejs
+```
+node test.js
+```
