@@ -38,21 +38,21 @@ module.exports.array_to_data = array_to_data;
  * @param {string} in_data
  */
 function data_to_array( in_data ){
-    let D = String( in_data );
+    let d = String( in_data );
 
     /**@type {string[]}*/
     const ret_arr = [];
 
-    while( D.length >0 ){
+    while( d.length >0 ){
         /** indexOf ':' */
-        let Index = D.indexOf(':');
+        let Index = d.indexOf(':');
         if( Index <1 ){
             throw 'get data error: index error';
         }
 
         /** get str length */
         let Leng = Number.parseInt(
-            D.slice( 0, Index ) ,
+            d.slice( 0, Index ) ,
             16
         );
         if( Number.isNaN( Leng ) ){
@@ -61,12 +61,12 @@ function data_to_array( in_data ){
 
         let LastIndex = Index + Leng +1;
 
-        ret_arr.push( D.slice(
+        ret_arr.push( d.slice(
             Index +1 ,
             LastIndex
         ) );
 
-        D = D.slice( LastIndex );
+        d = d.slice( LastIndex );
     }
     return ret_arr;
 }
